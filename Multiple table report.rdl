@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Sales_Document_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Sales_Document_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Sales_Document_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Total_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Total_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Total_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NameCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NameCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NameCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_CustomerCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_CustomerCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_CustomerCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Phone_No_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Phone_No_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Phone_No_Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AddressCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AddressCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AddressCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="E_MailCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>E_MailCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>E_MailCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Entry_No_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Entry_No_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Entry_No_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Customer_No_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Customer_No_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Customer_No_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Posting_Date_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Posting_Date_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Posting_Date_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Document_Type_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Document_Type_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Document_Type_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Document_No_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Document_No_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Document_No_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Description_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Description_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Description_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Currency_Code_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Currency_Code_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Currency_Code_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Original_Amt___LCY_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Original_Amt___LCY_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Original_Amt___LCY_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Remaining_Amount_Cust_Ledger_EntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Remaining_Amount_Cust_Ledger_EntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Remaining_Amount_Cust_Ledger_EntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryType_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryType_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryType_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostingDate_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostingDate_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostingDate_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocumentType_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocumentType_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocumentType_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocumentNo_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocumentNo_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocumentNo_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmountLCY_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmountLCY_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmountLCY_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TransactionNo_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TransactionNo_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TransactionNo_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="JournalBatchName_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>JournalBatchName_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>JournalBatchName_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmountLCY_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmountLCY_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmountLCY_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmountLCY_DetailedCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmountLCY_DetailedCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmountLCY_DetailedCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocumentType_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocumentType_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocumentType_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostingDate_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostingDate_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostingDate_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PricesIncludingVAT_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PricesIncludingVAT_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PricesIncludingVAT_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amount_SalesHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amount_SalesHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amount_SalesHeaderCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="No_Customer">
+          <DataField>No_Customer</DataField>
+        </Field>
+        <Field Name="Phone_No_">
+          <DataField>Phone_No_</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="E_Mail">
+          <DataField>E_Mail</DataField>
+        </Field>
+        <Field Name="Entry_No_Cust_Ledger_Entry">
+          <DataField>Entry_No_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Customer_No_Cust_Ledger_Entry">
+          <DataField>Customer_No_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Posting_Date_Cust_Ledger_Entry">
+          <DataField>Posting_Date_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Document_Type_Cust_Ledger_Entry">
+          <DataField>Document_Type_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Document_No_Cust_Ledger_Entry">
+          <DataField>Document_No_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Description_Cust_Ledger_Entry">
+          <DataField>Description_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Currency_Code_Cust_Ledger_Entry">
+          <DataField>Currency_Code_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Original_Amt___LCY_Cust_Ledger_Entry">
+          <DataField>Original_Amt___LCY_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Original_Amt___LCY_Cust_Ledger_EntryFormat">
+          <DataField>Original_Amt___LCY_Cust_Ledger_EntryFormat</DataField>
+        </Field>
+        <Field Name="Remaining_Amount_Cust_Ledger_Entry">
+          <DataField>Remaining_Amount_Cust_Ledger_Entry</DataField>
+        </Field>
+        <Field Name="Remaining_Amount_Cust_Ledger_EntryFormat">
+          <DataField>Remaining_Amount_Cust_Ledger_EntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_DetailedCustLedgEntry">
+          <DataField>EntryNo_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="EntryType_DetailedCustLedgEntry">
+          <DataField>EntryType_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="PostingDate_DetailedCustLedgEntry">
+          <DataField>PostingDate_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DocumentType_DetailedCustLedgEntry">
+          <DataField>DocumentType_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DocumentNo_DetailedCustLedgEntry">
+          <DataField>DocumentNo_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="AmountLCY_DetailedCustLedgEntry">
+          <DataField>AmountLCY_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="AmountLCY_DetailedCustLedgEntryFormat">
+          <DataField>AmountLCY_DetailedCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="TransactionNo_DetailedCustLedgEntry">
+          <DataField>TransactionNo_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="JournalBatchName_DetailedCustLedgEntry">
+          <DataField>JournalBatchName_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmountLCY_DetailedCustLedgEntry">
+          <DataField>DebitAmountLCY_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmountLCY_DetailedCustLedgEntryFormat">
+          <DataField>DebitAmountLCY_DetailedCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmountLCY_DetailedCustLedgEntry">
+          <DataField>CreditAmountLCY_DetailedCustLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmountLCY_DetailedCustLedgEntryFormat">
+          <DataField>CreditAmountLCY_DetailedCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="DocumentType_SalesHeader">
+          <DataField>DocumentType_SalesHeader</DataField>
+        </Field>
+        <Field Name="No_SalesHeader">
+          <DataField>No_SalesHeader</DataField>
+        </Field>
+        <Field Name="PostingDate_SalesHeader">
+          <DataField>PostingDate_SalesHeader</DataField>
+        </Field>
+        <Field Name="PricesIncludingVAT_SalesHeader">
+          <DataField>PricesIncludingVAT_SalesHeader</DataField>
+        </Field>
+        <Field Name="Amount_SalesHeader">
+          <DataField>Amount_SalesHeader</DataField>
+        </Field>
+        <Field Name="Amount_SalesHeaderFormat">
+          <DataField>Amount_SalesHeaderFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
